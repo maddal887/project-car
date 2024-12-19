@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- control -->
+    <div id="skodaButtons">
+    <button id="startSkoda" type="button" onclick="skoda.startEngine()">start Skoda engine</button>
+    <button id="stopSkoda" type="button" onclick="skoda.stopEngine()">stop Skoda engine</button>
+    </div>
+    <div id="KiaButtons">
+    <button id="startKia" type="button" onclick="Kia.startEngine()">start Kia engine</button>
+    <button id="stopKia" type="button" onclick="Kia.stopEngine()">stop Kia engine</button>
+
+    <!-- input -->
+<select name="cars" id="cars">
+    <option value="Skoda" id="skoda">skoda</option>
+    <option value="Kia" id="kia">kia</option>
+</select>
+
+</div>
+<p>Enter car owner name:</p>
+<div id="ownerName">
+<input id="skodaOwnerName" type="text">
+</div>
+
+<div id="plate">
+<p>Enter car plate number:</p>
+<input id="skodaPlate" type="text">
+
+</div>
+
+<button onclick="submit()">submit</button>
+
+<!-- this is the skoda -->
+
+
+        <div class="firstCar">
+            
+        <div id="upperPart">
+            <p id="carWithName1" class="p0"></p>
+            <p id="carOwnerName" class="p0"></p>
+            <p id="carPlate" class="p0"></p>
+        </div>
+        <div id="modelYear1"></div>
+            <div class="wheels1">
+                <div id="wheelBack1">
+                <img class="skodaWheel" src="—Pngtree—car wheel tires_6750875.png">
+                </div>
+                <div id="wheelFront1">
+                <img class="skodaWheel" src="—Pngtree—car wheel tires_6750875.png">
+                </div>
+            </div>  
+        </div>
+
+
+       
+
+<!-- this is the Kia -->
+
+
+        <div class="secondCar">
+            <div id="carKia">
+                <p id="carName2" class="p0"></p>
+                <p id="kiaOwnerName" class="p0"></p>
+                <p id="kiaPlate" class="p0"></p>
+            </div>
+            <div id="modelYear2"></div>
+                <div class="wheels2">
+                    <div id="wheelBack2">
+                    <img class="kiaWheel" src="—Pngtree—car wheel tires_6750875.png">
+                    </div>
+                    <div id="wheelFront2">
+                    <img class="kiaWheel" src="—Pngtree—car wheel tires_6750875.png">
+                    </div>
+                </div>  
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
